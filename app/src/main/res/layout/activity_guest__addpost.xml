@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Guest_Addpost">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <include
+                android:id="@+id/Toolbar"
+                layout="@layout/app_bar_home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="0dp" />
+            <Button
+                android:id="@+id/addPhoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Toolbar"
+                android:layout_margin="10dp"
+                android:drawableStart="@drawable/ic_photo_camera_black_24dp"
+                android:drawableLeft="@drawable/ic_photo_camera_black_24dp"
+                android:text="Photos/Video"
+                />
+
+            <MultiAutoCompleteTextView
+                android:id="@+id/write"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_below="@+id/addPhoto"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:hint="Write something...."
+                android:background="@drawable/custom_edit_text_bg"
+
+                />
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/write"
+                android:text="Share"
+                android:background="#10413D"
+                android:textColor="#F1EDED"
+                android:textSize="20dp"
+                android:layout_marginTop="300dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                />
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

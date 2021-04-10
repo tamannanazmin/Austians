@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="40dp"
+    android:text="Blood Group"
+    android:textSize="20dp"
+    android:textColor="#01030F"
+    android:drawableStart="@drawable/blood"
+    android:drawableLeft="@drawable/blood"
+    android:drawablePadding="8dp"
+    >
+
+</TextView>

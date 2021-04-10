@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <RelativeLayout tools:context=".Post"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <include
+                android:id="@+id/Toolbar"
+                layout="@layout/app_bar_home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="0dp" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/addPhotoForPost"
+                android:layout_below="@id/Toolbar"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/ic_photo_camera_black_24dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Toolbar"
+                android:layout_alignTop="@id/addPhotoForPost"
+                android:layout_toRightOf="@id/addPhotoForPost"
+                android:layout_alignBottom="@id/addPhotoForPost"
+                android:id="@+id/image"
+                android:text="Photos/ Videos"
+                android:textColor="#111010"
+                android:layout_marginLeft="0dp"
+                android:textSize="15dp"
+                android:background="#68A0A4A7"
+                android:textIsSelectable="false"
+                android:gravity="center"
+                />
+
+            <Button
+                android:id="@+id/codeButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Code Mode"
+                android:layout_below="@id/addPhotoForPost"
+                android:layout_margin="10dp"
+
+                />
+
+            <MultiAutoCompleteTextView
+                android:id="@+id/writeForPost"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_below="@+id/codeButton"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:hint="Write something...."
+                android:background="@drawable/custom_edit_text_bg"
+
+                />
+
+            <EditText
+                android:id="@+id/codeText"
+                android:layout_width="390dp"
+                android:layout_height="150dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/custom_edit_text_bg"
+                android:layout_below="@+id/writeForPost"
+                android:hint="write down your code in here..........."
+                android:visibility="invisible"
+                />
+            <Button
+                android:id="@+id/HideCodeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Close the Code Mode"
+                android:layout_below="@id/codeText"
+                android:layout_margin="10dp"
+                android:visibility="invisible"
+
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/writeForPost"
+                android:text="Share"
+                android:background="#10413D"
+                android:textColor="#F1EDED"
+                android:textSize="20dp"
+                android:layout_marginTop="300dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/shareForPost"
+                />
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>

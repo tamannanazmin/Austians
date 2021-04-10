@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheckedTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="40dp"
+    android:text="Semester"
+    android:textSize="20dp"
+    android:textColor="#FDFDFD"
+    android:drawableStart="@drawable/ic_local_library_black_24dp"
+    android:drawableLeft="@drawable/ic_local_library_black_24dp"
+    android:drawablePadding="8dp"
+
+    >
+
+</CheckedTextView>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PostForLendingInstruments">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include
+            android:id="@+id/Toolbar"
+            layout="@layout/app_bar_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp" />
+
+        <MultiAutoCompleteTextView
+            android:id="@+id/writeforInstrument"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/Toolbar"
+            android:layout_marginLeft="20dp"
+            android:hint="Write something...."
+            android:background="@drawable/custom_edit_text_bg"
+
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/addPhotoForInstrument"
+            android:layout_below="@id/writeforInstrument"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_photo_camera_black_24dp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/writeforInstrument"
+            android:layout_alignTop="@id/addPhotoForInstrument"
+            android:layout_toRightOf="@id/addPhotoForInstrument"
+            android:layout_alignBottom="@id/addPhotoForInstrument"
+            android:id="@+id/image"
+            android:text="Photos/ Videos"
+            android:textColor="#111010"
+            android:layout_marginLeft="0dp"
+            android:textSize="15dp"
+            android:background="#68A0A4A7"
+            android:textIsSelectable="false"
+            android:gravity="center"
+            />
+
+        <Button
+            android:id="@+id/shareforInstrument"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/addPhotoForInstrument"
+            android:text="Share"
+            android:background="#10413D"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="300dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#F1EDED"
+            android:textSize="20dp"
+
+            />
+
+
+    </RelativeLayout>
+</ScrollView>
+
+
+</RelativeLayout>

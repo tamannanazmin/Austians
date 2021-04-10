@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <include
+                android:id="@+id/Toolbar"
+                layout="@layout/app_bar_home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="0dp" />
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/Toolbar"
+                android:textSize="20dp"
+                android:layout_marginTop="20dp"
+                android:inputType="text"
+                android:hint="Date of event:"
+                android:drawableStart="@drawable/ic_event_available_black_24dp"
+                android:drawableLeft="@drawable/ic_event_available_black_24dp"
+                android:drawablePadding="8dp"
+                android:textColor="#0F0F0F"
+                android:background="@drawable/custom_edit_text_bg"
+                android:id="@+id/dateOfEvents"
+                />
+
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/dateOfEvents"
+                android:textSize="20dp"
+                android:layout_marginTop="20dp"
+                android:inputType="text"
+                android:hint="Time of event:"
+                android:drawableStart="@drawable/ic_access_time_black_24dp"
+                android:drawableLeft="@drawable/ic_access_time_black_24dp"
+                android:drawablePadding="8dp"
+                android:textColor="#111010"
+                android:background="@drawable/custom_edit_text_bg"
+                android:id="@+id/timeOfEvents"
+                />
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/timeOfEvents"
+                android:textSize="20dp"
+                android:layout_marginTop="20dp"
+                android:inputType="text"
+                android:hint="Loction of event:"
+                android:drawableStart="@drawable/ic_location_on_black_24dp"
+                android:drawableLeft="@drawable/ic_location_on_black_24dp"
+                android:drawablePadding="8dp"
+                android:textColor="#161515"
+                android:background="@drawable/custom_edit_text_bg"
+                android:id="@+id/placeOfEvents"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/placeOfEvents"
+                android:layout_marginTop="20dp"
+                android:id="@+id/text1OfEvents"
+                android:text="Add Description :"
+                android:textSize="20dp"/>
+
+
+
+            <MultiAutoCompleteTextView
+                android:id="@+id/writeOfEvents"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_below="@+id/text1OfEvents"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:hint="Write here......"
+                android:background="@drawable/custom_edit_text_bg"
+
+                />
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/addPhotoOfEvents"
+                android:layout_below="@id/writeOfEvents"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/ic_photo_camera_black_24dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Toolbar"
+                android:layout_alignTop="@id/addPhotoOfEvents"
+                android:layout_toRightOf="@id/addPhotoOfEvents"
+                android:layout_alignBottom="@id/addPhotoOfEvents"
+                android:id="@+id/image"
+                android:text="Photos/ Videos"
+                android:textColor="#111010"
+                android:layout_marginLeft="0dp"
+                android:textSize="15dp"
+                android:background="#68A0A4A7"
+                android:textIsSelectable="false"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:layout_marginTop="200dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/addPhotoOfEvents"
+                android:id="@+id/text2OfEvents"
+                android:text="Category of event :"
+                android:textSize="20dp"
+                android:textColor="#131318"
+                />
+            <Spinner
+                android:layout_marginTop="200dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/addPhotoOfEvents"
+                android:layout_toRightOf="@id/text2OfEvents"
+                android:id="@+id/categoryOfEvents"
+                android:layout_marginLeft="20dp"
+                android:entries="@array/categories"
+                android:background="@drawable/custom_edit_text_bg">
+            </Spinner>
+
+            <Button
+                android:layout_below="@+id/categoryOfEvents"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="Share"
+                android:background="#10413D"
+                android:layout_margin="10dp"
+                android:textColor="#F1EDED"
+                android:textSize="20dp"
+                android:id="@+id/shareOfEvents"
+                />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

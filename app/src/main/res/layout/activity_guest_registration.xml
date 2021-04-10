@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".guest_registration">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bb"
+        >
+
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:text="Registration"
+            android:gravity="center"
+            android:textSize="50dp"
+            android:textColor="#F1EDED"
+
+            />
+
+        <EditText
+            android:id="@+id/guest_name"
+            android:layout_width="350dp"
+            android:layout_height="40dp"
+            android:textSize="20dp"
+            android:layout_marginTop="50dp"
+            android:inputType="text"
+            android:textColorHint="#7A8F8F"
+            android:hint="Name"
+            android:drawableStart="@drawable/ic_account_box_black_24dp"
+            android:drawableLeft="@drawable/ic_account_box_black_24dp"
+            android:drawablePadding="8dp"
+            android:textCursorDrawable="@null"
+            android:textColor="#F1EDED"
+            android:background="@drawable/custom_edit_text_bg"
+            android:layout_marginLeft="20dp"
+            />
+
+        <EditText
+            android:id="@+id/guest_email"
+            android:layout_width="350dp"
+            android:layout_height="40dp"
+            android:textSize="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:inputType="textEmailAddress"
+            android:textColorHint="#7A8F8F"
+            android:hint="Email"
+            android:drawableStart="@drawable/ic_email_black_24dp"
+            android:drawableLeft="@drawable/ic_email_black_24dp"
+            android:drawablePadding="8dp"
+            android:textCursorDrawable="@null"
+            android:background="@drawable/custom_edit_text_bg"
+            android:textColor="#F1EDED"
+            />
+
+        <EditText
+            android:id="@+id/guest_phn"
+            android:layout_width="350dp"
+            android:layout_height="40dp"
+            android:textSize="20dp"
+            android:layout_marginTop="30dp"
+            android:inputType="phone"
+            android:layout_marginLeft="20dp"
+            android:textColorHint="#7A8F8F"
+            android:hint="Phone number"
+            android:drawableStart="@drawable/ic_phone_black_24dp"
+            android:drawableLeft="@drawable/ic_phone_black_24dp"
+            android:drawablePadding="8dp"
+            android:textCursorDrawable="@null"
+            android:background="@drawable/custom_edit_text_bg"
+            android:textColor="#F1EDED"
+            />
+
+
+        <EditText
+            android:id="@+id/guest_password"
+            android:layout_width="350dp"
+            android:layout_marginLeft="20dp"
+            android:layout_height="40dp"
+            android:textSize="20dp"
+            android:inputType="textPassword"
+            android:layout_marginTop="30dp"
+            android:textColorHint="#7A8F8F"
+            android:hint="Password"
+            android:drawableStart="@drawable/ic_lock_black_24dp"
+            android:drawableLeft="@drawable/ic_lock_black_24dp"
+            android:drawablePadding="8dp"
+            android:textCursorDrawable="@null"
+            android:background="@drawable/custom_edit_text_bg"
+            android:textColor="#F1EDED"
+            />
+
+        <EditText
+            android:id="@+id/guest_confirmPassword"
+            android:layout_width="350dp"
+            android:layout_height="40dp"
+            android:textSize="20dp"
+            android:layout_marginLeft="20dp"
+            android:inputType="textPassword"
+            android:textColorHint="#7A8F8F"
+            android:layout_marginTop="30dp"
+            android:hint="Confirm Password"
+            android:drawableStart="@drawable/ic_lock_black_24dp"
+            android:drawableLeft="@drawable/ic_lock_black_24dp"
+            android:drawablePadding="8dp"
+            android:textCursorDrawable="@null"
+            android:background="@drawable/custom_edit_text_bg"
+            android:textColor="#F1EDED"
+            />
+        <CheckBox
+            android:id="@+id/guest_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="I agree with the terms and conditions for Registration."
+            android:layout_marginTop="30dp"
+            android:textColor="#F1EDED"
+            />
+
+        <Button
+            android:id="@+id/guest_register"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Register"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#F1EDED"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="30dp"
+            android:background="#102B29"
+            />
+
+    </LinearLayout>
+
+
+</ScrollView>
